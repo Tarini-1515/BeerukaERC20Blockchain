@@ -15,6 +15,7 @@ Important links of the projects:
 2. Token distribution to account1:  https://ropsten.etherscan.io/tx/0x4405f429e4eae3b33f2898fcbf7c7fdab84fbdcbbb5d2c6deb7adab7e15509a8
 3. Token distribution to account2: https://ropsten.etherscan.io/tx/0xa058a9c66efb823403ac2ddbc486452d343c728260156fd584741d40328a6c2a
 4. Ethereum testnet ETH Address of Token Owner: 0xf0Bf4a27b88Ce3c48779a1A8c58111ae14d71E70
+5. Video demonstration explaining the operation of the contratc: https://www.youtube.com/watch?v=LikWMQs_JcA
 
 ## Tools/ Applications Used
 
