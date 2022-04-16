@@ -4,14 +4,14 @@
 Deploying the ERC20 contract to an 
 Ethereum testnet network, and distributing 5% of the total supply equally between each of the ETH addresses in the file. 
 (e.g. if 100 tokens remain, 5 tokens get distributed into the N accounts in the file - 10 
-accounts means each get 0.5 tokens) 
+accounts mean each gets 0.5 tokens) 
 • Each distribution to be executed on the Ethereum testnet network
 
 
 
-Important links of the projects: 
+Important links to the projects: 
 
-1. ERC20 contratc address: https://ropsten.etherscan.io/tx/0x372e710462048ca20d474f1fac31af7c34d4dad07bf8e32df4deb5cf682cca8c
+1. ERC20 contract address: https://ropsten.etherscan.io/tx/0x372e710462048ca20d474f1fac31af7c34d4dad07bf8e32df4deb5cf682cca8c
 2. Token distribution to account1:  https://ropsten.etherscan.io/tx/0x4405f429e4eae3b33f2898fcbf7c7fdab84fbdcbbb5d2c6deb7adab7e15509a8
 3. Token distribution to account2: https://ropsten.etherscan.io/tx/0xa058a9c66efb823403ac2ddbc486452d343c728260156fd584741d40328a6c2a
 4. Ethereum testnet ETH Address of Token Owner: 0xf0Bf4a27b88Ce3c48779a1A8c58111ae14d71E70
@@ -25,48 +25,48 @@ Important links of the projects:
           4. Metamask
 ## INDEX
 
-1. Setting up Metamask account and creating 3 accounts
- where Account1 acts as owner account, and Account2 and Account3 act as additional accounts where we transfer 5% of the total tokens
+1. Setting up a Metamask account and creating 3 accounts
+ where Account1 acts as the owner account, and Account2 and Account3 act as additional accounts where we transfer 5% of the total tokens
  Metamask link: https://metamask.io/
 
-2. Setting up Infura account
+2. Setting up an Infura account
    Infura website link: https://infura.io/dashboard/ethereum/2e3feb5145fd4709849b30f351a89b1d/settings
 
 3. Setting up Visual Studio Code to run Token Distribution Node JS Code
    Visual Studio Code link: https://code.visualstudio.com/
 
-4. Remix.IDE : Here we exicute the ERC20 code and creat the tokens and deploy the contract
+4. Remix.IDE: Here we execute the ERC20 code and create the tokens and deploy the contract
    Remix.IDE: https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.0+commit.c7dfd78e.js
 
-5. Downloading additional modules which require to exicute distribute.js code
+5. Downloading additional modules which require executing distribute.js code
 
-6. Running the ERC20 code and deploying the contrat
+6. Running the ERC20 code and deploying the contract
 
-7. Editing the .env file and connecting the applications to one another to create and distribute the tokens
+7. Editing the .env file and connecting the applications to create and distribute the tokens
 
 8. Connecting the metamask and providing the account details to which the token distribution must be taken place
 
-9. Exicuting distribute.js file 
+9. Executing distribute.js file 
 
 10. Checking the transaction using transaction hash on Etherscan
      Etherscan: https://ropsten.etherscan.io/tx/0xcb9bb60315f6829b6d18d30adca5ee88812760a7997ee8d6560c2dbd39f78ce8
      
 ## 1. Setting up Metamask Account
 
-1. Downlaod the Metamask extention to the browser. 
-2. Manually enter the secret phrase (which can be 12, 14, 16 letter)
-3. set up new password for the Account
+1. Download the Metamask extension to the browser. 
+2. Manually enter the secret phrase (which can be 12, 14, 16 letters)
+3. set up a new password for the Account
 4. login the metamask Account
-5. Create 3 account using "+create account" icon and add etherum text networks
-6. In this project we work on Ropsten Test network.
-7. Add faucets into Account1 ( which ever you prefer as the onwer account) ETH faucets help into deploying the contract from REMIX.IDE
+5. Create 3 accounts using the "+create account" icon and add etherum text networks
+6. In this project we work on the Ropsten Test network.
+7. Add faucets into Account1 (whichever you prefer as the owner account) ETH faucets help in deploying the contract from REMIX.IDE
 
 
 ## 2. Setting up Infura account
 ** Infura helps in Blockchain applications from testing to Scaled deployment **
 1. Open the Infura website and sign up
 2. Infura: https://infura.io/dashboard/ethereum/2e3feb5145fd4709849b30f351a89b1d/settings
-3. Create new project and name the project 
+3. Create a new project and name the project 
 4. Click on the Project settings
 5. select the project Id and copy the hash
 
@@ -84,16 +84,16 @@ Important links of the projects:
      * package.json
 
 3. We make sure node is installed
-4. Open the termial in the left top.
+4. Open the terminal on the left top.
 5. change the path to the blockchain project
-6. enter node --version , to check if node is installed.
+6. enter node --version, to check if node is installed.
 7. if node is not found, we can install using this link: Cryptii.com
 
 ## 4. Setting up REMIX.IDE
 
 1. Change the compiler to the required one from the ERC20 code.
 
-2. With the given Solidity code of ERC20, exicute the code by setting up the enviornmnet as Injected web3
+2. With the given Solidity code of ERC20, execute the code by setting up the environment as Injected web3
  
 3. Connect the Metamask account to the Remix IDE by conforming through the Metamask account
 
@@ -127,7 +127,7 @@ Important links of the projects:
     string private _name;
     string private _symbol;
 
-4. Provide name, symbol, and how many token have to be created into the Metamask account.
+4. Provide name, symbol, and how many tokens have to be created into the Metamask account.
                  
     
                constructor() 
@@ -138,7 +138,7 @@ Important links of the projects:
         _mint(msg.sender, 1000000000000000000000000);
     }
 
-5. Exicute the code and copy the Contract address from left corner.
+5. Execute the code and copy the Contract address from the left corner.
 
 6. We can view the transactions and number of tokens created through Etherscan.
      https://ropsten.etherscan.io/tx/0x372e710462048ca20d474f1fac31af7c34d4dad07bf8e32df4deb5cf682cca8c
@@ -156,14 +156,14 @@ Important links of the projects:
 
 4. The OWNER_ADDRESS from the  Metamask account
 
-5. Which ever metamask account we have selected, we extract the private key of the same account.
+5. Whichever metamask account we have selected, we extract the private key of the same account.
 
 
 ## 8. Token distribution to the mentioned accounts
 
 1. As we have to distribute 5% of the total supply equally between each of the ETH addresses in the file. 
 (e.g. if 100 tokens remain, 5 tokens get distributed into the N accounts in the file - 10 
-accounts means each get 0.5 tokens) 
+accounts mean each gets 0.5 tokens) 
 
 2. From the file accounts.txt, we provide the account addresses to the file, to which we would like the token to be distributed
 
@@ -178,12 +178,12 @@ accounts means each get 0.5 tokens)
        
 ## 9. Execute the distribute.js file
 
-1. We have edited all the hashes we reqired and downloded the dependencies too.
+1. We have edited all the hashes we required and downloaded the dependencies too.
 
-2. We excecute the node JS file by the command:
+2. We execute the node JS file by the command:
         Node distribute.js
 
-3.  Here the code will be executed and the tokens will be disributed one account after another account.
+3.  Here the code will be executed and the tokens will be distributed to one account after another account.
      
 
      
