@@ -1,5 +1,5 @@
 
-# Instructions for application execution of token distribution
+# Instructions for Application Execution of Token Distribution
 
 Deploying the ERC20 contract to an 
 Ethereum testnet network, and distributing 5% of the total supply equally between each of the ETH addresses in the file. 
